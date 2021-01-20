@@ -1,5 +1,9 @@
 @import "blocks/header";
 
+* {
+    transition:  .3s;
+}
+
 ul,
 li {
     margin: 0;
@@ -7,9 +11,15 @@ li {
     list-style: none;
 }
 
+a:active, 
+a:focus,
 a {
     text-decoration: none;
+    outline: none;
     color: inherit;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 h1,
@@ -23,4 +33,10 @@ h6 {
 
 body {
     color: #2f3035;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }

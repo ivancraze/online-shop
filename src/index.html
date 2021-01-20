@@ -1,89 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Drive Moto</title>
-        <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
-        <link rel="stylesheet" href="css/fonts.css" />
-        <link rel="stylesheet" href="css/style.min.css" />
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__top">
-                <div class="container">
-                    <div class="header__top-inner">
-                        <nav class="menu">
-                            <ul class="menu__list">
-                                <li class="menu__item">
-                                    <a class="menu__link" href="#">Магазины</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="menu__link" href="#">Акции</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="menu__link" href="#">Доставка и оплата</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <a class="logo" href="#">
-                            <img class="logo__img" src="img/icons/logo.svg" alt="logo" />
-                        </a>
-                        <div class="header__info">
-                            <p class="header__address">Москва, ул. Науки 25</p>
-                        </div>
-                        <ul class="user-list">
-                            <li class="user-list__item">
-                                <a class="user-list__link" href="#">
-                                    <img class="user-list__img" src="img/icons/heart.svg" alt="favorites"/>
-                                </a>
-                            </li>
-                            <li class="user-list__item">
-                                <a class="user-list__link" href="#">
-                                    <img class="user-list__img" src="img/icons/user.svg" alt="user"/>
-                                </a>
-                            </li>
-                            <li class="user-list__item">
-                                <a class="user-list__link" href="#">
-                                    <img class="user-list__img" src="img/icons/basket.svg" alt="basket"/>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="header__bottom">
-                <div class="container">
-                    <div class="header__bottom-inner">
-                        <ul class="menu-categories">
-                            <li class="menu-categories__item">
-                                <a class="menu-categories__link" href="#">Квадроциклы</a>
-                            </li>
-                            <li class="menu-categories__item">
-                                <a class="menu-categories__link" href="#">Катера</a>
-                            </li>
-                            <li class="menu-categories__item">
-                                <a class="menu-categories__link" href="#">Гидроциклы</a>
-                            </li>
-                            <li class="menu-categories__item">
-                                <a class="menu-categories__link" href="#">Лодки</a>
-                            </li>
-                            <li class="menu-categories__item">
-                                <a class="menu-categories__link" href="#">Вездеходы</a>
-                            </li>
-                            <li class="menu-categories__item">
-                                <a class="menu-categories__link" href="#">Снегоходы</a>
-                            </li>
-                            <li class="menu-categories__item">
-                                <a class="menu-categories__link" href="#">Двигатели</a>
-                            </li>
-                            <li class="menu-categories__item">
-                                <a class="menu-categories__link" href="#">Запчасти</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Drive Moto</title>
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<nav class="menu">
+						<a class="menu__link" href="#">Магазины</a>
+						<a class="menu__link" href="#">Акции</a>
+						<a class="menu__link" href="#">Доставка и оплата</a>
+					</nav>
+					<a class="logo" href="#">
+						<img class="logo__img" src="img/icons/logo.svg" alt="logo" />
+					</a>
+					<a class="header-info" href="#">
+						<img class="header-info__img" src="img/icons/geopoint.svg" alt="geopoint"/>
+						<p class="header-info__text">Москва, ул. Науки 25</p>
+					</a>
+					<ul class="user-list">
+						<li class="user-list__item">
+							<a class="user-list__link" href="#">
+								<img class="user-list__img" src="img/icons/heart.svg" alt="favorites"/>
+							</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link" href="#">
+								<img class="user-list__img" src="img/icons/user.svg" alt="user"/>
+							</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link" href="#">
+								<img class="user-list__img" src="img/icons/basket.svg" alt="basket"/>
+								<span class="user-list__count">1</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<nav class="menu-categories">
+						<a class="menu-categories__link menu-categories__link--active" href="#">Квадроциклы</a>
+						<a class="menu-categories__link" href="#">Катера</a>
+						<a class="menu-categories__link" href="#">Гидроциклы</a>
+						<a class="menu-categories__link" href="#">Лодки</a>
+						<a class="menu-categories__link" href="#">Вездеходы</a>
+						<a class="menu-categories__link" href="#">Снегоходы</a>
+						<a class="menu-categories__link" href="#">Двигатели</a>
+						<a class="menu-categories__link" href="#">Запчасти</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</body>
 </html>
