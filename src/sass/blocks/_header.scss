@@ -61,9 +61,11 @@
         border-bottom: 3px solid transparent;
         margin-bottom: -3px;
         &:hover {
+            transition: .3s;
             color: #2f3035;
             border-bottom-color: #1C62CD;
             text-shadow: 0.25px 0.1px 0px #222, -0.25px -0.1px 0px #222;
         }
     }
+    
 }
