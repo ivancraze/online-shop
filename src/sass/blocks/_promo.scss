@@ -1,0 +1,144 @@
+.promo {
+  margin-top: 80px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.promo-slider {
+  max-width: 870px;
+  &__btn {
+    position: absolute;
+    opacity: 0.7;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    z-index: 5;
+    border: none;
+    outline: none;
+    &:focus{
+      outline: none;
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
+  &__btn-prev {
+    left: 23px;
+  }
+  &__btn-next {
+    right: 23px;
+  }
+}
+.slick-dots{
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  li{
+    display: inline-block;
+    padding: 0 5px;
+  }
+  button{
+    padding: 0;
+    font-size: 0;
+    margin: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+}
+.slick-active{
+  button{
+    background-color: #fff;
+    &:focus{
+      outline: none;
+    }
+  }
+  
+}
+.promo-sale {
+  max-width: 265px;
+  max-height: 400px;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__badge {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #1C62CD;
+    padding: 8px 20px;
+  }
+  &__price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &-new{
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 32px;
+      color: #1C62CD;
+      margin-right: 6px;
+      padding-right: 20px;
+      background: url('../img/icons/rouble_new.svg') no-repeat center right;
+    }
+    &-old{
+      font-size: 14px;
+      line-height: 17px;
+      color: #C4C4C4;
+      background: url('../img/icons/rouble_old.svg') no-repeat center right;
+      margin-right: 6px;
+      padding-right: 15px;
+      position: relative;
+       &:before{
+        border-bottom: 0.5px solid #C4C4C4;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 50%;
+        transform: rotate(-7deg);
+      }
+    }
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  &__bottom {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    background-color: #F0F0F4;
+    padding: 25px 20px;
+    span{
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1C62CD;
+    }
+  }
+}

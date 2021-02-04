@@ -1,8 +1,6 @@
 @import "blocks/header";
-
-* {
-    transition:  .3s;
-}
+@import "blocks/promo";
+@import "blocks/slick";
 
 ul,
 li {

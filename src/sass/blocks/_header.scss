@@ -8,11 +8,13 @@
         font-weight: bold;
     }
 }
+
 .menu {
     &__link {
         padding-right: 50px;
     }
 }
+
 .header-info {
     display: flex;
     justify-content: space-between;
@@ -25,6 +27,7 @@
         margin: 0;
     }
 }
+
 .user-list {
     display: flex;
     align-items: center;
@@ -48,7 +51,6 @@
     }
 }
 
-
 .menu-categories {
     background-color: #F0F0F4;
     display: flex;
@@ -64,6 +66,7 @@
             color: #2f3035;
             border-bottom-color: #1C62CD;
             text-shadow: 0.25px 0.1px 0px #222, -0.25px -0.1px 0px #222;
+            transition:  .3s;
         }
     }
 }
