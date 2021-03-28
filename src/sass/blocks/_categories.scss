@@ -1,0 +1,51 @@
+.categories {
+  margin-top: 80px;
+}
+
+.categories-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categories-item {
+  min-width: 370px;
+  justify-content: space-between;
+  display: flex;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  padding: 20px 20px 14px 20px;
+  transition: all .3s;
+  &__img {
+    
+  }
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    border: 1px solid #FFF;
+  }
+  &__text {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__img{
+    margin: 0 auto;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 28px;
+  }
+  &__subtitle {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+    &::after {
+      content: url('../../img/icons/arrow_more.svg');
+      margin-left: 3px;
+    }
+  }
+}
