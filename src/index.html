@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/style.min.css" />
 	</head>
 	<body>
+
 		<header class="header">
 			<div class="container">
 				<div class="header__top">
@@ -22,7 +23,7 @@
 					</a>
 					<a class="header-info" href="#">
 						<img class="header-info__img" src="img/icons/geopoint.svg" alt="geopoint"/>
-						<p class="header-info__text">Москва, ул. Науки 25</p>
+						<span class="header-info__text">Москва, ул. Науки 25</span>
 					</a>
 					<ul class="user-list">
 						<li class="user-list__item">
@@ -102,8 +103,39 @@
 					</a>
 				</div>
 			</div>
+		</section>		
+
+		<section class="search">
+			<div class="container">
+				<div class="search-inner">
+					<div class="search-tabs">
+						<a class="search-tabs__link" href="#tab__1">Поиск по  номеру</a>
+						<a class="search-tabs__link search-tabs__link-active" href="#tab__2">Поиск по марке</a>
+						<a class="search-tabs__link" href="#tab__3">Поиск по названию товара</a>
+					</div>
+					<div class="search-content">
+						<div class="search-content__item" id="tab__1">
+							<form class="search-content__form" action="get">
+								<input class="search-content__input" type="text" placeholder="Введите номер">
+								<button class="search-content__btn" type="submit">Искать</button>
+							</form>
+						</div>
+						<div class="search-content__item search-content__item-active" id="tab__2">
+							<form class="search-content__form" action="get">
+								<input class="search-content__input" type="text" placeholder="Введите марку">
+								<button class="search-content__btn" type="submit">Искать</button>
+							</form>
+						</div>
+						<div class="search-content__item" id="tab__3">
+							<form class="search-content__form" action="get">
+								<input class="search-content__input" type="text" placeholder="Введите название">
+								<button class="search-content__btn" type="submit">Искать</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="js/slick.min.js"></script>
