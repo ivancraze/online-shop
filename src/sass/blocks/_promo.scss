@@ -53,13 +53,12 @@
   }
 }
 .slick-active{
-  button{
+  button {
     background-color: #fff;
     &:focus{
       outline: none;
     }
   }
-  
 }
 .promo-sale {
   max-width: 265px;
