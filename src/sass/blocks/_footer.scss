@@ -1,0 +1,80 @@
+.footer{
+  span{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  background-color:#F0F0F4;
+  &__wrapper{
+    padding-top: 43px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subscribe{
+    width: 270px;
+    &-form{
+      padding-top: 34px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-input{
+      background: #FFFFFF;
+      border: none;
+      outline: none;
+      padding: 8px 0 8px 12px;
+      &::placeholder{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #C4C4C4;
+      }
+    }
+    &-btn{
+      background: #1C62CD;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 13px;
+      text-align: center;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 12px 16px;
+      border: none;
+    }
+  }
+  &__policy{
+    padding: 46px 0 22px;
+    display: flex;
+    justify-content: center;
+    &-link{
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 12px;
+      color: #48494D;
+      margin: 0 40px;
+    }
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  &__shop{
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  &__social{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    &-icon{
+      & + .footer__social-icon{
+        margin-left: 30px;
+      }
+    }
+  }
+
+}
