@@ -1,0 +1,10 @@
+.banner{
+  margin-bottom: 80px;
+  &__link{
+    display: inline-block;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.5);
+    }
+  }
+}

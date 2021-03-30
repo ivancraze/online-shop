@@ -16,7 +16,9 @@ $(function(){
 //Activate tabs in search section
 tabs('.search-tabs__title', '.search-tabs__content-item', '.search-tabs__header', 'active');
 //Activate tabs in products section
-tabs('.products-tabs__title', '.products-tabs__content-item', '.products-tabs__header', 'active');
+tabs('.popular-tabs__title', '.popular-tabs__content-item', '.popular-tabs__header', 'active');
+//Activate tabs in suggest section
+tabs('.suggest-tabs__title', '.suggest-tabs__content-item', '.suggest-tabs__header', 'active');
 
 function tabs (tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
 

@@ -1,5 +1,4 @@
 .products{
-  margin-bottom: 200px;
   &-tabs{
     &__header{
       margin-bottom: 40px;
@@ -38,6 +37,7 @@
   }
   &__link {
     margin-top: 35px;
+    margin-bottom: 80px;
     text-align: center;
     &-more{
       display: inline-block;
