@@ -12,70 +12,12 @@ $(function(){
     nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img src="img/icons/arrow_black_next.svg"></button>'
   });
 });
-
-
-// Tabs
-// Search tab
-// const tabsLinks = document.querySelectorAll('.search-tabs__link');
-// const contentItems = document.querySelectorAll('.search-content__item');
-
-// for (let i = 0; i < tabsLinks.length; i++) {
-//   tabsLinks[i].addEventListener("click", (e) => {
-//     e.preventDefault();
-//     let activeTabAttr = e.target.getAttribute("href");
-//     for (let j = 0; j < tabsLinks.length; j++) {
-//       let contentAttr = contentItems[j].getAttribute("id");
-
-//       if (activeTabAttr === contentAttr) {
-//         tabsLinks[j].classList.add("search-tabs__link-active");
-//         contentItems[j].classList.add("search-content__item-active"); 
-//       } else {
-//         tabsLinks[j].classList.remove("search-tabs__link-active");
-//         contentItems[j].classList.remove("search-content__item-active");
-//       }
-//     }
-//   });
-// }
-
-// const productTabsLinks = document.querySelectorAll('.tab');
-// const productContentItems = document.querySelectorAll('.tabs-content');
-
-// for (let i = 0; i < productTabsLinks.length; i++) {
-//   productTabsLinks[i].addEventListener("click", (e) => {
-//     e.preventDefault();
-//     let activeTabAttr = e.target.getAttribute("href");
-
-//     for (let j = 0; j < productTabsLinks.length; j++) {
-//       let contentAttr = productContentItems[j].getAttribute("id");
-
-//       if (activeTabAttr === contentAttr) {
-//         productTabsLinks[j].classList.add("tab--active");
-//         productContentItems[j].classList.add("tabs-content--active"); 
-//       } else {
-//         productTabsLinks[j].classList.remove("tab--active");
-//         productContentItems[j].classList.remove("tabs-content--active");
-//       }
-//     }
-//   });
-// }
-
-
-// Popular
-// favourite button
-const favouriteBtn = document.querySelectorAll('.product-item__favourite');
-for (let i = 0; i < favouriteBtn.length; i++) {
-  favouriteBtn[i].addEventListener("click", (e) => {
-    e.preventDefault();
-    favouriteBtn[i].classList.toggle('product-item__favourite--active');
-  });
-}
-
+//Tabs 
 //Activate tabs in search section
 tabs('.search-tabs__title', '.search-tabs__content-item', '.search-tabs__header', 'active');
 //Activate tabs in products section
-// tabs('.search-tabs__title', '.search-tabs__content-item', '.search-tabs__header', 'active');
+tabs('.products-tabs__title', '.products-tabs__content-item', '.products-tabs__header', 'active');
 
-//Tabs function
 function tabs (tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
 
   const tabs = document.querySelectorAll(tabsSelector);
@@ -110,5 +52,14 @@ function tabs (tabsSelector, tabsContentSelector, tabsParentSelector, activeClas
           }
       });
     }
+  });
+}
+// Popular
+// favourite button
+const favouriteBtn = document.querySelectorAll('.product-item__favourite');
+for (let i = 0; i < favouriteBtn.length; i++) {
+  favouriteBtn[i].addEventListener("click", (e) => {
+    e.preventDefault();
+    favouriteBtn[i].classList.toggle('product-item__favourite--active');
   });
 }
