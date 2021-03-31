@@ -27,6 +27,8 @@
         display: block;
       }
     }
+    &__content-header{
+    }
   }
   &__title{
     font-weight: bold;
@@ -194,6 +196,10 @@
   }
 }
 .product-slider {
+  & .slick-list {
+    padding: 20px 0 20px 20px;
+    margin: -20px 0 -20px -20px;
+  }
   &__item{
     width: 271px!important;
   }
