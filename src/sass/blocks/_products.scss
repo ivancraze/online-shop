@@ -68,6 +68,9 @@
   padding: 52px 20px 31px;
   max-width: 271px;
   height: 400px;
+  &__img{
+    max-width: 100%;
+  }
   &__wrapper{
     position: relative;
   }
