@@ -12,7 +12,7 @@
     margin-bottom: 50px;
     &-grid{
       opacity: 0.3;
-      &--active{
+      &.active{
         opacity: 1;
       }
       &:focus{
@@ -21,7 +21,7 @@
     }
     &-line{
       opacity: 0.3;
-      &--active{
+      &.active{
         opacity: 1;
       }
       &:focus{
@@ -71,6 +71,27 @@
       justify-content: space-between;
       & .product-item__wrapper{
         margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.pagination{
+  width: 100%;
+  margin-top: 70px;
+  &__list{
+    display: flex;
+    justify-content: center;
+    &-item {
+      padding: 9px 12px;
+      margin: 0 4px;
+      border: 2px solid transparent;
+      font-size: 18px;
+      line-height: 22px;
+      color: #C4C4C4;
+      &.active{
+        border: 2px solid #1C62CD;
+        color: #1C62CD;
       }
     }
   }
