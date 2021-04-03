@@ -1,0 +1,24 @@
+.breadcrumbs {
+  margin-bottom: 40px;
+  &__list-item{
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+    padding-right: 16px;
+    margin-right: 10px;
+    &::after{
+      content: "";
+      background-image: url('../../img/icons/arrow_more.svg');
+      position: absolute;
+      width: 6px;
+      height: 9px;
+      right: 0;
+      bottom: 3px;
+    }
+    &:last-child::after{
+      display: none;
+    }
+  }
+}

@@ -59,6 +59,7 @@ function tabs (tabsSelector, tabsContentSelector, tabsParentSelector, activeClas
 // Popular
 // favourite button
 const favouriteBtn = document.querySelectorAll('.product-item__favourite');
+
 for (let i = 0; i < favouriteBtn.length; i++) {
   favouriteBtn[i].addEventListener("click", (e) => {
     e.preventDefault();
