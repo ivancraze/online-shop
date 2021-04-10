@@ -1,11 +1,13 @@
 .catalog{
   margin-bottom: 70px;
+
   &__title{
     margin-bottom: 26px;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
   }
+
   &__filter{
     display: flex;
     justify-content: space-between;
@@ -33,7 +35,7 @@
       border: 1.5px solid #D7D9DF;
       font-size: 14px;
       line-height: 17px;
-      padding: 4px 20px;
+      padding: 4px 10px;
     }
     &--left button{
       padding: 4px 22px;
@@ -59,6 +61,7 @@
       }
     }
   }
+
   &__wrapper{
     display: flex;
     &-aside{
@@ -74,6 +77,108 @@
       }
     }
   }
+}
+
+.aside-filter{
+  &-tabs{
+    &__title{
+      margin-right: 40px;
+      cursor: pointer;
+      font-weight: bold;
+      font-style: 16px;
+      line-height: 19px;
+      color: #C4C4C4;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      width: 50%;
+      &.active{
+        color: #2F3035;
+        padding-bottom: 7px;
+        border-bottom: 2px solid #1C62CD;
+      }
+    }
+    &__content{
+      &-item{
+        display: none;
+        &.active{
+          display: block;
+        }
+      }
+    }
+    &__header{
+      display: inline-flex;
+      justify-content:center;
+    }
+  }
+
+  &__item{
+    &-drop{
+      margin: 40px 0;
+    }
+    &-title{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      padding-left: 26px;
+    }
+  }
+
+  &__content{
+    display: flex;
+    &-box{
+      width: 50%;
+    }
+    &-label{
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+.filter__item-drop{
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+  &::before{
+    content: "";
+    background-image: url('../../img/icons/arrow_down.svg');
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 12px;
+    height: 8px;
+    transition: all .3s;
+    transform: rotateX(0deg);
+  }
+  &--active{
+    &::before{
+      transform: rotateX(180deg);
+    }
+  }
+}
+
+.jq-checkbox, .jq-radio{
+  background: #fff;
+  box-shadow: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #c4c4c4;
+  border-radius: 1px;
+  vertical-align: -2px;
+  margin: 0 8px 0 0;
+  &.checked{
+    background: #1C62CD;
+    border: none;
+  }
+}
+.jq-checkbox.checked .jq-checkbox__div{
+  width: 8px;
+  height: 6px;
+  margin: 4px 0 0 3px;
+  border-bottom: none;
+  border-left: none;
+  transform: rotate(0);
+  background-image: url('../../img/icons/checkbox-icon.svg');
 }
 
 .pagination{
