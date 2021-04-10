@@ -145,11 +145,11 @@
       height: 22px;
       top: 0;
       left: 0;
-      background-image: url('../../img/icons/favourite.svg');
+      background-image: url('../img/icons/favourite.svg');
       transition: all .3s;
     }
     &--active::before{
-      background-image: url('../../img/icons/favourite_active.svg');
+      background-image: url('../img/icons/favourite_active.svg');
     }
   }
 }

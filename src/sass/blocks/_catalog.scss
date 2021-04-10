@@ -141,7 +141,7 @@
   cursor: pointer;
   &::before{
     content: "";
-    background-image: url('../../img/icons/arrow_down.svg');
+    background-image: url('../img/icons/arrow_down.svg');
     position: absolute;
     left: 0;
     bottom: 4px;
@@ -178,7 +178,7 @@
   border-bottom: none;
   border-left: none;
   transform: rotate(0);
-  background-image: url('../../img/icons/checkbox-icon.svg');
+  background-image: url('../img/icons/checkbox-icon.svg');
 }
 
 .pagination{
