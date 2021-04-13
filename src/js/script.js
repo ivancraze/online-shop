@@ -13,6 +13,7 @@ $(function(){
   });
   //FormStyler
   $('.filter-style').styler();
+
   //Rangeslider
 
   // $(".js-range-slider").ionRangeSlider({
@@ -143,7 +144,7 @@ for (let i = 0; i < favouriteBtn.length; i++) {
 
 //Content
 //Filters accordeon
-$('.filter__item-drop').on('click', function(){
+$('.filter__item-drop, .filter-btn__extra').on('click', function(){
   $(this).toggleClass('filter__item-drop--active');
   $(this).next().slideToggle(200);
 })
