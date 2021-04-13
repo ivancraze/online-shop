@@ -13,6 +13,75 @@ $(function(){
   });
   //FormStyler
   $('.filter-style').styler();
+  //Rangeslider
+
+  // $(".js-range-slider").ionRangeSlider({
+  //   type: "double",
+  //   grid: false,
+  //   min: 0,
+  //   max: 1500000,
+  //   from: 100000,
+  //   to: 500000,
+  // });
+  // rangeSlider
+    let $range = $(".js-range-slider"),
+      $inputFrom = $(".js-input-from"),
+      $inputTo = $(".js-input-to"),
+      instance,
+      min = 0,
+      max = 1500000,
+      from = 100000,
+      to = 500000;
+
+    $range.ionRangeSlider({
+      skin: "round",
+        type: "double",
+        min: min,
+        max: max,
+        from: 100000,
+        to: 500000,
+        onStart: updateInputs,
+        onChange: updateInputs
+    });
+    instance = $range.data("ionRangeSlider");
+
+    function updateInputs (data) {
+      from = data.from;
+        to = data.to;
+        
+        $inputFrom.prop("value", from);
+        $inputTo.prop("value", to);	
+    }
+
+    $inputFrom.on("input", function () {
+        let val = $(this).prop("value");
+        
+        // validate
+        if (val < min) {
+            val = min;
+        } else if (val > to) {
+            val = to;
+        }
+        
+        instance.update({
+            from: val
+        });
+    });
+
+    $inputTo.on("input", function () {
+        let val = $(this).prop("value");
+        
+        // validate
+        if (val < from) {
+            val = from;
+        } else if (val > max) {
+            val = max;
+        }
+        
+        instance.update({
+            to: val
+        });
+    });
 });
 
 //Tabs 

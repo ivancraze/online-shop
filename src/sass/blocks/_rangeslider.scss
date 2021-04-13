@@ -1,0 +1,38 @@
+// rangeSlider
+.irs--round{
+  width: 100%;
+}
+.irs-min,
+.irs-max,
+.irs-from,
+.irs-to,
+.irs-single{
+  display: none;
+}
+.js-input-span{
+  padding-right: 13px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+
+}
+.js-input-from,
+.js-input-to{
+  width: 60px;
+  outline: none;
+  border:none;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #2F3035;
+}
+.js-input-from{
+  margin-right: 100px;
+}
+.irs--round .irs-handle {
+  top: 34px;
+  width: 8px;
+  height: 8px;
+  border: 4px solid #1C62CD;
+  border-radius: 50%;
+}
