@@ -101,6 +101,7 @@ tabs('.suggest-tabs__title', '.suggest-tabs__content-item', '.suggest-tabs__head
 tabs('.aside-filter-tabs__title', '.aside-filter-tabs__content-item', '.aside-filter-tabs__header', 'active');
 // Activate tabs in product card page
 tabs('.product-card__tabs-title', '.product-card__tabs-content-item', '.product-card__tabs-header', 'active');
+tabs('.product-page__tabs-title', '.product-page__tabs-content-item', '.product-page__tabs-header', 'active');
 
 function tabs (tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
 
