@@ -12,6 +12,7 @@
 @import "blocks/catalog";
 @import "blocks/formstyler";
 @import "blocks/rangeslider";
+@import "blocks/product-card";
 
 
 ul,
@@ -29,6 +30,16 @@ a {
     color: inherit;
     &:hover {
         text-decoration: none;
+    }
+}
+
+button {
+    outline: none;
+    &:active {
+        outline: none;
+    }
+    &:focus {
+        outline: none;
     }
 }
 

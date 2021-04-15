@@ -1,4 +1,10 @@
 $(function(){
+  //Stars rating 
+  $("#rateYo").rateYo({
+    normalFill: "#c4c4c4",
+    ratedFill: "#1C62CD",
+    spacing: "7px",
+  });
   //Sliders
   $(".promo-slider").slick({
     dots: true,
@@ -15,7 +21,6 @@ $(function(){
   $('.filter-style').styler();
 
   //Rangeslider
-
   // $(".js-range-slider").ionRangeSlider({
   //   type: "double",
   //   grid: false,
@@ -94,6 +99,8 @@ tabs('.popular-tabs__title', '.popular-tabs__content-item', '.popular-tabs__head
 tabs('.suggest-tabs__title', '.suggest-tabs__content-item', '.suggest-tabs__header', 'active');
 // Activate tabs in aside filters from catalog page
 tabs('.aside-filter-tabs__title', '.aside-filter-tabs__content-item', '.aside-filter-tabs__header', 'active');
+// Activate tabs in product card page
+tabs('.product-card__tabs-title', '.product-card__tabs-content-item', '.product-card__tabs-header', 'active');
 
 function tabs (tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
 
@@ -147,4 +154,4 @@ for (let i = 0; i < favouriteBtn.length; i++) {
 $('.filter__item-drop, .filter-btn__extra').on('click', function(){
   $(this).toggleClass('filter__item-drop--active');
   $(this).next().slideToggle(200);
-})
+});
