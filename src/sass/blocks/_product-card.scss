@@ -187,9 +187,86 @@
     &-content{
       &-item{
         display: none;
+        padding: 0 26px;
         &.active{
           display: block;
         }
+      }
+    }
+  }
+}
+.card{
+  &__top{
+    margin-bottom: 50px;
+    &-search{
+      line-height: 20px;
+      color: rgba($color: #2F3035, $alpha: 0.7);
+      font-size: 17px;
+    }
+    &-text{
+      background: #F0F0F4;
+      border-radius: 3px;
+      margin-left: 17px;
+      padding: 9px 37px 9px 17px;
+      border: none;
+      margin-right: 150px;
+    }
+    &-pickup{
+      margin-left: 54px;
+    }
+  }
+  &__list{
+    &-item{
+      display: flex;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba($color: #2F3035, $alpha: 0.1);
+      font-size: 16px;
+      line-height: 150%;
+      color: rgba($color: #2F3035, $alpha: 0.7);
+      &-title{
+        display: flex;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F3035;
+        margin-bottom: 20px;
+      }
+    }
+    &-address{
+      width: 220px;
+      margin-right: 80px;
+      &-title{
+        margin-right: 75px;
+      }
+    }
+    &-hours{
+      width: 157px;
+      margin-right: 96px;
+      &--wrapper{
+        display: flex;
+        justify-content: space-between;
+      }
+      & span{
+        display: block;
+      }
+    }
+    &-available{
+      width: 120px;
+      margin-right: 80px;
+    }
+    &-count{
+      width: 10px;
+      margin-right: 230px;
+    }
+    &-btn{
+      & button{
+        padding: 10px 40px;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.12em;
+        color: #FFFFFF;
+        background: #1C62CD;
+        border: none;
+        border-radius: 3px;
       }
     }
   }
