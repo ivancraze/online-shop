@@ -2,6 +2,9 @@
   &-tabs{
     &__header{
       margin-bottom: 40px;
+      @media screen and (max-width: 996px) {
+        overflow-x: scroll;
+      }
     }
     &__title{
       display: inline-block;
@@ -19,6 +22,9 @@
       }
       & + .products-tabs__title{
         margin-left: 50px;
+        @media screen and (max-width: 996px) {
+          margin-left: 20px;
+        }
       }
     }
     &__content-item{
@@ -41,6 +47,9 @@
     margin-top: 35px;
     margin-bottom: 80px;
     text-align: center;
+    @media screen and (max-width: 1300px) {
+      margin-top: 60px;
+    }
     &-more{
       display: inline-block;
       background: #F0F0F4;
@@ -203,6 +212,21 @@
   & .slick-list {
     padding: 20px 0 20px 20px;
     margin: -20px 0 -20px -20px;
+  }
+  & .slick-dots{
+    @media screen and (max-width: 1300px) {
+      bottom: -20px;
+    }
+    & button{
+      @media screen and (max-width: 1300px) {
+        background: #C4C4C4;
+      }
+    }
+  }
+  & .slick-active > button{
+    @media screen and (max-width: 1300px) {
+      background: #1C62CD;
+    }
   }
   &__item{
     width: 271px!important;

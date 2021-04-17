@@ -1,4 +1,4 @@
-.footer{
+ .footer{
   span{
     font-weight: bold;
     font-size: 14px;
@@ -9,6 +9,15 @@
     padding-top: 43px;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 996px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    & > div {
+      @media screen and (max-width: 996px) {
+        margin-bottom: 25px;
+      }
+    }
   }
   &__subscribe{
     width: 270px;

@@ -3,6 +3,11 @@
   &__link{
     display: inline-block;
     transition: all .3s;
+    & img{
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
+    }
     &:hover{
       box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.5);
     }

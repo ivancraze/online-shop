@@ -15,6 +15,11 @@
           transition:  .3s;
       }
     }
+    &__header{
+      @media screen and (max-width: 996px) {
+        overflow-x: scroll;
+      }
+    }
     &__content {
       &-header{
         margin-top: 25px;
@@ -27,12 +32,13 @@
       }
       &-form {
         display: flex;
+        position: relative;
       }
       &-input {
         background-color: #F0F0F4;
         border: none;
         border-radius: 3px;
-        padding: 5px 26px;
+        padding: 17px 60px 17px 26px;
         line-height: 19px;
         font-size: 16px;
         width: 100%;
@@ -53,6 +59,19 @@
         border: none;
         padding: 17px 42px;
         margin-left: -4px;
+        @media screen and (max-width: 640px) {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          padding: 17px 26px;
+          font-size: 0;
+          line-height: 0;
+          background-color: transparent;
+          width: 24px;
+          height: 24px;
+          background-image: url('../img/icons/search.svg');
+          background-repeat: no-repeat;
+        }
       }
     }
   }

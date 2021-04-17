@@ -1,3 +1,8 @@
 .suggest{
   margin-bottom: 80px;
 }
+.suggest-tabs__header{
+  @media screen and (max-width: 996px) {
+    overflow-x: scroll;
+  }
+}

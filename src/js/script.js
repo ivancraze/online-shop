@@ -23,7 +23,40 @@ $(function(){
   $(".product-slider").slick({
     slidesToShow: 4,
     prevArrow: '<button class="product-slider__btn product-slider__btn-prev"><img src="img/icons/arrow_black_prev.svg"></button>',
-    nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img src="img/icons/arrow_black_next.svg"></button>'
+    nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img src="img/icons/arrow_black_next.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1
+        }
+      }
+    ]
   });
   //FormStyler
   $('.filter-style').styler();

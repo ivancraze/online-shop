@@ -67,3 +67,9 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.mobile-overflow{
+    @media screen and (max-width: 996px) {
+        width: 800px;
+      }
+}
