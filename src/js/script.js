@@ -9,7 +9,15 @@ $(function(){
   $(".promo-slider").slick({
     dots: true,
     prevArrow: '<button class="promo-slider__btn promo-slider__btn-prev"><img src="img/icons/arrow_prev.svg"></button>',
-    nextArrow: '<button class="promo-slider__btn promo-slider__btn-next"><img src="img/icons/arrow_next.svg"></button>'
+    nextArrow: '<button class="promo-slider__btn promo-slider__btn-next"><img src="img/icons/arrow_next.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 969,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
   });
 
   $(".product-slider").slick({
@@ -155,4 +163,12 @@ for (let i = 0; i < favouriteBtn.length; i++) {
 $('.filter__item-drop, .filter-btn__extra').on('click', function(){
   $(this).toggleClass('filter__item-drop--active');
   $(this).next().slideToggle(200);
+});
+
+//Hambmenu
+const hambBtn = document.querySelector('.menu__hamburger-btn');
+const menuMobile = document.querySelector('.menu-mobile__list');
+hambBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  menuMobile.classList.toggle('menu-mobile__list--active');
 });

@@ -20,12 +20,107 @@
 		<div class="container">
 			<div class="header__top">
 				<nav class="menu">
+					<button class="menu__hamburger-btn" type="button">
+						<div class="menu__hamburger-line"></div>
+						<div class="menu__hamburger-line"></div>
+						<div class="menu__hamburger-line"></div>
+					</button>
+					<ul class="menu-mobile__list">
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<img class="menu-mobile__icon" src="img/icons/user.svg" alt="img">
+								<span class="menu-mobile__text">Войти</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<img class="menu-mobile__icon" src="img/icons/user.svg" alt="img">
+								<span class="menu-mobile__text">Регистрация</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<img class="menu-mobile__icon" src="img/icons/heart.svg" alt="img">
+								<span class="menu-mobile__text">Избранное</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<img class="menu-mobile__icon" src="img/icons/basket.svg" alt="img">
+								<span class="menu-mobile__text">Корзина</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<img class="menu-mobile__icon" src="img/icons/house.svg" alt="img">
+								<span class="menu-mobile__text">Магазины</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<img class="menu-mobile__icon" src="img/icons/discount.svg" alt="img">
+								<span class="menu-mobile__text">Акции</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<img class="menu-mobile__icon" src="img/icons/payment.svg" alt="img">
+								<span class="menu-mobile__text">Доставка и оплата</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<span class="menu-mobile__text">Квадроциклы</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<span class="menu-mobile__text">Катера</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item menu-mobile__item--active">
+							<a class="menu-mobile__link" href="#">
+								<span class="menu-mobile__text">Гидроциклы</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<span class="menu-mobile__text">Лодки</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<span class="menu-mobile__text">Вездеходы</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<span class="menu-mobile__text">Снегоходы</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<span class="menu-mobile__text">Двигатели</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<span class="menu-mobile__text">Запчасти</span>
+							</a>
+						</li>
+						<li class="menu-mobile__item">
+							<a class="menu-mobile__link" href="#">
+								<span class="menu-mobile__address">Москва, <br>ул. Науки 25</span>
+							</a>
+						</li>
+					</ul>
 					<a class="menu__link" href="#">Магазины</a>
 					<a class="menu__link" href="#">Акции</a>
 					<a class="menu__link" href="#">Доставка и оплата</a>
 				</nav>
 				<a class="logo" href="#">
 					<img class="logo__img" src="img/icons/logo.svg" alt="logo" />
+					<img class="logo__img-mobile" src="img/icons/logo-mobile.svg" alt="logo mobile" />
 				</a>
 				<a class="header-info" href="#">
 					<img class="header-info__img" src="img/icons/geopoint.svg" alt="geopoint" />
@@ -50,19 +145,26 @@
 					</li>
 				</ul>
 			</div>
-		</div>
-		<div class="header__bottom">
-			<div class="container">
-				<nav class="menu-categories">
-					<a class="menu-categories__link menu-categories__link--active" href="#">Квадроциклы</a>
-					<a class="menu-categories__link" href="#">Катера</a>
-					<a class="menu-categories__link" href="#">Гидроциклы</a>
-					<a class="menu-categories__link" href="#">Лодки</a>
-					<a class="menu-categories__link" href="#">Вездеходы</a>
-					<a class="menu-categories__link" href="#">Снегоходы</a>
-					<a class="menu-categories__link" href="#">Двигатели</a>
-					<a class="menu-categories__link" href="#">Запчасти</a>
-				</nav>
+			<div class="header__bottom">
+				<div class="container">
+					<nav class="menu-categories">
+						<a class="menu-categories__link menu-categories__link--active" href="#">Квадроциклы</a>
+						<a class="menu-categories__link" href="#">Катера</a>
+						<a class="menu-categories__link" href="#">Гидроциклы</a>
+						<a class="menu-categories__link" href="#">Лодки</a>
+						<a class="menu-categories__link" href="#">Вездеходы</a>
+						<a class="menu-categories__link" href="#">Снегоходы</a>
+						<a class="menu-categories__link" href="#">Двигатели</a>
+						<a class="menu-categories__link" href="#">Запчасти</a>
+					</nav>
+				</div>
+			</div>
+			<div class="menu-mobile__wrapper">
+				<div class="menu-mobile__links">
+					<a class="menu-mobile__links-item" href="#">Магазины</a>
+					<a class="menu-mobile__links-item" href="#">Акции</a>
+					<a class="menu-mobile__links-item" href="#">Доставка и оплата</a>
+				</div>
 			</div>
 		</div>
 	</header>
