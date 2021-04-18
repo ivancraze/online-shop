@@ -198,6 +198,11 @@ $('.filter__item-drop, .filter-btn__extra').on('click', function(){
   $(this).next().slideToggle(200);
 });
 
+//Footer accordeon
+$('.footer__info-title, .footer__shop-title').on('click', function(){
+  $(this).next().slideToggle(200);
+});
+
 //Hambmenu
 const hambBtn = document.querySelector('.menu__hamburger-btn');
 const menuMobile = document.querySelector('.menu-mobile__list');
