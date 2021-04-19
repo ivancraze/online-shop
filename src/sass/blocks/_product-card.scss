@@ -1,21 +1,43 @@
 .product-card{
   margin-bottom: 80px;
+  @media screen and (max-width: 1100px) {
+    margin-bottom: 40px;
+  }
   &__wrapper{
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 1100px) {
+      flex-wrap: wrap;
+    }
   }
   &__img-box{
     max-width: 500px;
     padding-top: 64px;
     text-align: center;
-    border: 1px solid #cdcdcd;
     &:hover{
       background: #FFFFFF;
-      border: 1px solid #FFF;
       box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
       border-radius: 3px;
       transition: all .3s;
+    }
+  }
+  &__sale::before{
+    content: "SALE";
+    padding: 6px 15px 8px;
+    position: absolute;
+    background: #1C62CD; 
+    color: #FFF;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+    @media screen and (max-width: 1100px) {
+      position: relative;
+      float: left;
     }
   }
   &__image{
@@ -23,6 +45,9 @@
   }
   &__content{
     max-width: 570px;
+    @media screen and (max-width: 1100px) {
+      order: -1;
+    }
   }
 
   &__price{
@@ -39,6 +64,12 @@
         width: 31%;
         height: 50%;
         transform: rotate(-7deg);
+        @media screen and (max-width: 425px) {
+          width: 39%;
+        }
+        @media screen and (max-width: 375px) {
+          width: 45%;
+        }
       }
     }
     &-new{
@@ -62,6 +93,9 @@
     font-weight: bold;
     color: #2F3035;
     margin-bottom: 10px;
+    @media screen and (max-width: 1100px) {
+      font-size: 20px;
+    }
   }
   &__vendor{
     font-size: 15px;
@@ -87,6 +121,9 @@
   }
 
   &__tabs{
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
     &-header{
       display: flex;
       justify-content: flex-start;
@@ -154,23 +191,47 @@
     background: #1C62CD;
     border-radius: 3px;
   }
+  &__buy--mobile{
+    display: none;
+    @media screen and (max-width: 1100px) {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin-top: 25px;
+      // padding: 0 153px;
+      background: #1C62CD;
+    }
+  }
 }
 
 .product-page{
+  &__mobile-overflow{
+    background-color: #f0f0f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 26px;
+    margin-bottom: 50px;
+    @media screen and (max-width: 1100px) {
+      overflow-x: scroll;
+      justify-content: flex-start;
+    }
+  }
   &__tabs{
     margin-bottom: 100px;
-    &-header{
-      background-color: #f0f0f4;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 26px;
-      margin-bottom: 50px;
-    }
+    // &-header{
+    //   background-color: #f0f0f4;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: center;
+    //   padding: 0 26px;
+    //   margin-bottom: 50px;
+    // }
     &-title{
       cursor: pointer;
       padding-top: 22px;
       margin-bottom: 22px;
+      margin-right: 20px;
       font-weight: normal;
       font-size: 20px;
       line-height: 24px;
@@ -183,6 +244,7 @@
         color: #2F3035;
         border-bottom: 2px solid #1C62CD;
       }
+      
     }
     &-content{
       &-item{
@@ -198,6 +260,13 @@
 .card{
   &__top{
     margin-bottom: 50px;
+    & label {
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        margin-bottom: 25px;
+        margin-left: 0px;
+      }
+    }
     &-search{
       line-height: 20px;
       color: rgba($color: #2F3035, $alpha: 0.7);
@@ -210,9 +279,26 @@
       padding: 9px 37px 9px 17px;
       border: none;
       margin-right: 150px;
+      @media screen and (max-width: 996px) {
+        margin-right: 100px;
+      }
+      @media screen and (max-width: 540px) {
+        margin-right: 0px;
+      }
+      @media screen and (max-width: 425px) {
+        padding: 9px 5px 9px 1px;
+      }
+      @media screen and (max-width: 425px) {
+        padding: 9px 1px 9px 1px;
+        margin-left: 5px;
+        width: 160px;
+      }
     }
     &-pickup{
       margin-left: 54px;
+      @media screen and (max-width: 1200px) {
+        margin-left: 10px;
+      }
     }
   }
   &__list{
@@ -223,24 +309,50 @@
       font-size: 16px;
       line-height: 150%;
       color: rgba($color: #2F3035, $alpha: 0.7);
+      @media screen and (max-width: 940px) {
+        display: block;
+      }
+      & div{
+        @media screen and (max-width: 940px) {
+          margin-bottom: 10px;
+        }
+      }
       &-title{
         display: flex;
         font-size: 20px;
         line-height: 24px;
         color: #2F3035;
         margin-bottom: 20px;
+        @media screen and (max-width: 940px) {
+          display: none;
+        }
       }
     }
     &-address{
       width: 220px;
       margin-right: 80px;
+      @media screen and (max-width: 1200px) {
+        margin-right: 40px;
+      }
+      @media screen and (max-width: 968px) {
+        margin-right: 0px;
+      }
       &-title{
         margin-right: 75px;
+        @media screen and (max-width: 1200px) {
+          margin-right: 40px;
+        }
+        @media screen and (max-width: 968px) {
+          margin-right: 0px;
+        }
       }
     }
     &-hours{
       width: 157px;
       margin-right: 96px;
+      @media screen and (max-width: 1200px) {
+        margin-right: 30px;
+      }
       &--wrapper{
         display: flex;
         justify-content: space-between;
@@ -252,12 +364,29 @@
     &-available{
       width: 120px;
       margin-right: 80px;
+      @media screen and (max-width: 1200px) {
+        margin-right: 40px;
+      }
+      @media screen and (max-width: 968px) {
+        margin-right: 0px;
+        display: inline-block;
+      }
     }
     &-count{
       width: 10px;
       margin-right: 230px;
+      @media screen and (max-width: 1200px) {
+        margin-right: 180px;
+      }
+      @media screen and (max-width: 940px) {
+        display: inline-block;
+      }
+      @media screen and (max-width: 425px) {
+        margin-right: 0px;
+      }
     }
     &-btn{
+      align-self: center;
       & button{
         padding: 10px 40px;
         font-size: 13px;

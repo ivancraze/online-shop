@@ -113,7 +113,7 @@
             transition: all .3s;
             &--active{
                 transform: translateX(0%);
-                z-index: 2;
+                z-index: 12;
             }
         }
         &__item{

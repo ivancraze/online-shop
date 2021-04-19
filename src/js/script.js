@@ -197,7 +197,10 @@ $('.filter__item-drop, .filter-btn__extra').on('click', function(){
   $(this).toggleClass('filter__item-drop--active');
   $(this).next().slideToggle(200);
 });
-
+//Filters accordeon mobile
+$('.aside-filter__btn-mobile').on('click', function(){
+  $(this).next().slideToggle(200);
+});
 //Footer accordeon
 $('.footer__info-title, .footer__shop-title').on('click', function(){
   $(this).next().slideToggle(200);

@@ -12,6 +12,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    flex-wrap: wrap-reverse;
+    @media screen and (max-width: 640px) {
+      margin-bottom: 25px;
+    }
     &-grid{
       opacity: 0.3;
       &.active{
@@ -44,10 +48,15 @@
       line-height: 17px;
       color: #2F3035;
       opacity: 0.7;
+      margin-bottom: 5px;
     }
-    &--right {
+    &--right{
       display: flex;
       align-items: center;
+      @media screen and (max-width: 720px) {
+        margin-bottom: 26px;
+        width: 100%;
+      }
       & button{
         padding: 0;
         border: none;
@@ -58,15 +67,24 @@
         & img{
           display: block;
         }
+        @media screen and (max-width: 720px) {
+          display: none;
+        }
       }
     }
   }
 
   &__wrapper{
     display: flex;
+    @media screen and (max-width: 640px) {
+      flex-wrap: wrap;
+    }
     &-aside{
       min-width: 290px;
       margin-right: 10px;
+      @media screen and (min-width: 640px) {
+        display: block;
+      }
     }
     &-list{
       display: flex;
@@ -75,11 +93,33 @@
       & .product-item__wrapper{
         margin-bottom: 30px;
       }
+      @media screen and (max-width: 1200px) {
+        justify-content: space-around;
+      }
+      @media screen and (max-width: 345px) {
+        max-width: 320px;
+      }
+      @media screen and (max-width: 330px) {
+      }
     }
   }
 }
 
 .aside-filter{
+  &__btn-mobile{
+    display: none;
+    @media screen and (max-width: 640px) {
+      display: block;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+      background-color: #1C62CD;
+      color: white;
+      padding: 10px 0;
+    }
+  }
   &-tabs{
     &__title{
       margin-right: 40px;
@@ -309,6 +349,9 @@
   &__list{
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 375px) {
+      // justify-content: flex-start;
+    }
     &-item {
       padding: 9px 12px;
       margin: 0 4px;
@@ -316,6 +359,9 @@
       font-size: 18px;
       line-height: 22px;
       color: #C4C4C4;
+      @media screen and (max-width: 375px) {
+        margin: 0;
+      }
       &.active{
         border: 2px solid #1C62CD;
         color: #1C62CD;
